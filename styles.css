@@ -1,0 +1,90 @@
+/** @format */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: dotted 1px red; */
+}
+
+html {
+    height: 100vh;
+    line-height: 1.6;
+}
+
+body {
+    height: 100%;
+    font-family: 'Roboto', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('background.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.app-popup {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    background: #fff;
+    padding: 3em;
+    border-radius: 1em;
+    width: 80%;
+    max-width: 750px;
+    text-align: center;
+    position: relative;
+}
+
+.app-popup h1 {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+}
+
+.app-popup p {
+    font-size: 1.75rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+.close-button {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    border: none;
+    background: none;
+    font-size: 2rem;
+    color: gray;
+    cursor: pointer;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    letter-spacing: 1.5px;
+    width: 200px;
+    height: 200px;
+    gap: 1em;
+    border: 1em solid #cfd8dc;
+    border-radius: 0.5em;
+    transition: all 0.3s ease;
+}
+
+.option i {
+    font-size: 2.5rem;
+}
+
+.option:hover {
+    border: 1em solid #9ac3d4;
+    background: #cfd8dc;
+    cursor: pointer;
+}
